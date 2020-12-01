@@ -1,0 +1,30 @@
+﻿@model Exercise1.Controllers.ContactResponce
+
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<h2>Thanks</h2>
+
+<div class="text-center">
+    <h1>Ваше письмо отправлено, @Model.Name</h1>
+    @if (Model.WillAttend == true)
+    {
+        @:Ваш э-мейл: <b>@Model.Email</b>
+        @:Ваше сообщение: <b>@Model.Message</b>
+
+
+
+
+    }
+    else
+    {
+        @:Ваш э-мейл: <b>@Model.Email</b>
+        @:Не отправлен.
+    }
+</div>
+<hr />
+<div class="btn btn-default">
+    <!--Ссылка Razor-->
+    @Html.ActionLink("Go to Home page", "Index")
+</div>

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Cities";
+}
+
+<h2>Cities</h2>
+
+<div style="width: 500px; float:left;">
+    <table style="border: 1px solid black; width: 500px">
+
+        <th>
+        <tr>
+            <td>#</td>
+            <td>Cities</td>
+            <td>number of Hotels </td>
+        </tr>
+        </th>
+        <tbody>
+            @foreach (var city in ViewBag.Cities)
+            {
+
+                <tr>
+                    <td>@city.Id</td>
+                    <td>@city.Titel</td>
+                    <td>@Html.ActionLink("HotelsList", "Hotels",  new { id = city.Id }), (@city.Hotels.Count) </td>
+                </tr>
+
+            }
+        </tbody>
+
+    </table>
+
+</div>
+
+<div style="clear:both"></div>
+

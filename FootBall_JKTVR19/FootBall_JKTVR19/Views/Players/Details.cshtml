@@ -1,0 +1,27 @@
+﻿@model FootBall_JKTVR19.Models.Player
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Player - @Model.Name (Команда - @Model.Team.Name)</h4>
+    <hr />
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            @if (Model.Photo != null)
+            {
+                <img src="@Url.Action("GetImage", new { Model.Id })" class="img-rounded" />
+            }
+            <h3>@Html.DisplayFor(model => model.Name)</h3>
+            <p>@Html.DisplayNameFor(model => model.Age) - @Html.DisplayFor(model => model.Age)</p>
+            <p>@Html.DisplayNameFor(model => model.Position) - @Html.DisplayFor(model => model.Position)</p>
+            <p>Club: @Html.DisplayNameFor(model => model.Team.Name) - Coach: @Html.DisplayFor(model => model.Team.Coach)</p>
+        </div>
+    </div>
+</div>
+
+

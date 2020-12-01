@@ -1,0 +1,39 @@
+﻿//@model Exercise1.Controllers.ContactResponce
+
+@{
+    ViewBag.Title = "ContactForm";
+}
+
+<h2>ContactForm</h2>
+
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label>Your name*:</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>E-mail*:</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Message*:</label>
+        @Html.TextBoxFor(x => x.Message, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Are your ready to send message?*</label>
+        @Html.DropDownListFor(x=>x.WillAttend,
+        new[]
+        {
+        new SelectListItem(){Text="Third", Value=bool.TrueString},
+        new SelectListItem(){Text="Forth, Value=bool.FalseString}
+        },"Ваш выбор?", new { @class = "form-control" }
+        )
+    </div>
+    <div class="text-center">
+        <input type="submit" value="Send answer" class="btn btn-warning" />
+    </div>
+}
+
+
