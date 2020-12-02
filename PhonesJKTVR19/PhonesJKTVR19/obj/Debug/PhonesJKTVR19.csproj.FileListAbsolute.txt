@@ -211,8 +211,8 @@ D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\bin\Microsoft.Owin.Security.Twitter.xm
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\bin\Microsoft.Owin.Security.OAuth.xml
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\obj\Debug\PhonesJKTVR19.csprojAssemblyReference.cache
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\obj\Debug\PhonesJKTVR19.csproj.CoreCompileInputs.cache
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\obj\Debug\PhonesJKTVR19.csproj.CopyComplete
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\obj\Debug\PhonesJKTVR19.dll
 D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\obj\Debug\PhonesJKTVR19.pdb
+D:\JKTVR19ASP\PhonesJKTVR19\PhonesJKTVR19\obj\Debug\PhonesJKTVR19.csprojAssemblyReference.cache
