@@ -34,6 +34,18 @@
         </div>
     </div>
     <div class="container body-content">
+        <div style="margin-top:30px; margin-bottom:30px; text-align: right;">
+            Search model by name:
+            @using (Ajax.BeginForm("PhoneSearch", "Phones", new AjaxOptions { UpdateTargetId = "results" }))
+            {
+                <input type="text" name="PhoneName" placeholder="Enter model name" />
+                <input type="submit" value="Search"/>
+
+            }
+        </div>
+        <!--Tis block - result - where output search result-->
+        <div id="results"></div>
+
         @RenderBody()
         <hr />
         <footer>

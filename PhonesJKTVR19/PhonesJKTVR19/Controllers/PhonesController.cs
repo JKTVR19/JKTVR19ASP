@@ -41,7 +41,19 @@ namespace PhonesJKTVR19.Controllers
             }
             return View(phone);
         }
+        //-------------------------------
+        [HttpPost]
+        public ActionResult PhoneSearch(string PhoneName)
+        {
+            // List phones sort by search condition, sort by price and descending
+            var allPhones = db.Phones.Include(a => a.Company).Where(b => b.Name.Contains(PhoneName)).OrderByDescending(t => t.Price).ToList();
 
+            if(allPhones.Count <= 0)
+            {
+                return HttpNotFound();
+            }
+            return PartialView(allPhones);
+        }
 
 
         protected override void Dispose(bool disposing)

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<PhonesJKTVR19.Models.Phone>
+
+<div id="searchresult">
+    <p>
+        <b>Found on request for @Model.Count() phone models</b>
+     </p>
+    <ul>
+
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Name, "Details", new { id = item.Id })
+                @Html.DisplayFor(modelItem => item.Price)
+            </li>
+
+        }
+    </ul>
+
+</div>
