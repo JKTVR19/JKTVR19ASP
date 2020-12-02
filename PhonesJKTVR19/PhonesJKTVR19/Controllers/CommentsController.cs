@@ -130,7 +130,7 @@ namespace PhonesJKTVR19.Controllers
             ViewBag.PhoneId = comment.PhonesId;
             db.Comments.Remove(comment);
             db.SaveChanges();
-            return RedirectToAction("Detalils", "Phones", new { id = ViewBag.PhoneId });
+            return RedirectToAction("Details", "Phones", new { id = ViewBag.PhoneId });
         }
 
         protected override void Dispose(bool disposing)
